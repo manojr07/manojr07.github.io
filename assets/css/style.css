@@ -94,4 +94,13 @@ a{color:inherit;text-decoration:none}
   .grid{grid-template-columns:1fr}
   .hero h1{font-size:34px}
 }
+.profile-pic{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid rgba(255,255,255,.15);
+  box-shadow: 0 0 0 3px rgba(110,168,254,.15);
+}
+
 
