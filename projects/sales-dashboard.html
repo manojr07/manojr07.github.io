@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sales Performance Dashboard | Your Name</title>
+  <title>Supply chain analysis | Manoj R</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
@@ -27,43 +27,61 @@
       
       <h3>Problem</h3>
       <p class="muted">
-      The sales team lacked a single source of truth for revenue performance.
-      Reports were static, delayed, and did not support region or product-level analysis.
+      The logistics team lacked visibility into carrier performance and delivery efficiency.
+      While shipment data was available, there was no clear way to compare carriers fairly, 
+      understand cost behavior over time, or identify inefficient routes and delivery risks.
+
+      Most metrics focused only on delivery time or total cost, which failed to explain why
+      certain carriers or routes performed better than others.
       </p>
       
       <h3>Data & Tools</h3>
       <ul class="muted">
-        <li>Data sources: CRM, transactional sales database</li>
+        <li>Data sources:Company sales database</li>
         <li>Data volume: ~2M rows</li>
-        <li>Tools: Power BI, SQL, DAX</li>
+        <li>Tools: Power BI (Modeling & Visualization)
+                   DAX (Advanced KPI calculations)</li>
       </ul>
 
       <h3>What I Built</h3>
       <ul class="muted">
-        <li>Executive KPI overview (Revenue, Growth, Margin)</li>
-        <li>Region & product drilldowns</li>
-        <li>Monthly YoY comparison with filters</li>
-      </ul>
+        <li> Data Modeling & KPI Design
+             * Designed calculated measures (not columns) to ensure metrics adapt dynamically to filters
+             * Focused on time-normalized and distance-normalized KPIs for fair comparison</li>
+        <li> * Distance Covered per Day
+               Measures carrier productivity
+             * Total Cost per Day
+               Measures spending velocity
+             * Transit Efficiency Index
+               Measures route efficiency</li>
+        <li> Carrier-Level Performance Analysis
+             * Compared carriers using:
+               Distance per day
+               Cost per day
+               Transit efficiency
+             * Corrected misleading totals by applying context-aware DAX logic
+             * Ensured totals represent business-meaningful averages, not recalculated raw values</li>
+        </ul>
       
       <h3>Key Insights</h3>
       <ul class="muted">
-        <li>West region contributed 38% of total revenue but had declining margin</li>
-        <li>Top 3 products drove 62% of growth</li>
-        <li>Customer repeat rate dropped after Q2</li>
+        <li>Some carriers covered more distance per day while maintaining lower cost per day, indicating higher operational efficiency</li>
+        <li>Certain carriers appeared fast but were cost-inefficient when analyzed per day</li>
+        <li>Total cost and transit days alone were misleading without normalization</li>
       </ul>
        
       <div class="about" style="margin-top:14px;">
         <h3 style="margin-top:0;">Key Highlights</h3>
         <ul class="muted">
-          <li>Revenue trend + YoY growth</li>
-          <li>Region drilldown + top products</li>
-          <li>Automated refresh + alerts</li>
+          <li>Advanced DAX-based KPI design</li>
+          <li>Carrier productivity & cost efficiency analysis</li>
+          <li>Business-focused storytelling with real insights</li>
         </ul>
 
         <h3>Tools</h3>
         <div class="skills">
           <div class="pill">Power BI</div>
-          <div class="pill">SQL</div>
+          <div class="pill">Power Query</div>
           <div class="pill">DAX</div>
         </div>
 
