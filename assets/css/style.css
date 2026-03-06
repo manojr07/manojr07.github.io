@@ -1,11 +1,11 @@
 :root{
-  --bg:#ffffff;
-  --card:#f8fafc;
-  --text:#0f172a;
-  --muted:#64748b;
-  --line:#e2e8f0;
-  --accent:#2563eb;
-  --btn:#2563eb;
+  --bg:#0f172a;
+  --card:#1e293b;
+  --text:#f1f5f9;
+  --muted:#94a3b8;
+  --line:#334155;
+  --accent:#3b82f6;
+  --btn:#1d4ed8;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
